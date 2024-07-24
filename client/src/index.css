@@ -78,6 +78,16 @@ body {
   border-radius: 4px;
 }
 
+.product-card {
+  position: relative;
+}
+
+.product-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* Responsive grid */
 .grid {
   display: grid;
