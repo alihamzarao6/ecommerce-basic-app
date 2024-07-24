@@ -17,6 +17,10 @@ app.use(helmet());
 app.use(morgan("dev"));
 app.use(express.json());
 
+app.get("/", (req, res) => {
+    res.send("API is running...");
+})
+
 // Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/products", productRoutes);
